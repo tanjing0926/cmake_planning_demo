@@ -7,10 +7,11 @@ process.cpp
 
 target_include_directories(${PROJECT_NAME}
 PUBLIC
-${PNC_Map_Dir}
+#${PNC_Map_Dir}
+${CMAKE_SOURCE_DIR}/src/pnc_map
 )
 
-target_link_directories(${PROJECT_NAME}
+target_link_libraries(${PROJECT_NAME}
 PUBLIC
 pnc_map
 )
